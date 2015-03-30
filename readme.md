@@ -32,7 +32,7 @@ Now we want to know the approximate number of camels in each county.
      `"Värmlands län": {"Värmland": 1, "Dalarna": .03},`  
      `"Dalarnas län": {"Dalarna": .97}`
 
-3. Finally, we run our camel data through this filter, `run_stats --id province --value num_camels --factors factors.json --input input.csv`  greger
+3. Finally, we run our camel data through this filter, `run_stats --id province --value num_camels --factors factors.json --input input.csv`, to get the approximate count of camels in each county:
 
     `Värmlands län, 13`  
     `Dalarnas län, 19`
