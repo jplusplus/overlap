@@ -6,9 +6,9 @@ Case: We have hardly any demographic data for the 15,000 or so Swedish postal co
 
 The solution
 ------------
-Use your favourite GIS software to intersect the two administrative systems. Create a .dfb (QGIS) or .csv file containing an area column for the intersection. Run the file through `create_factors.py`, to create a table of weighing factors. Then run your statistics through `run_stats.py` to apply.
+Use your favourite GIS software to intersect the two administrative systems. Create a .dfb (QGIS) or .csv file containing an area column for the intersections. Run the file through `create_factors.py`, to create a table of weighing factors. Then run your statistics through `run_stats.py` to apply.
 
-This will obviously only create useful results for fairly small and homogenous administrative entities, and fairly large datasets. Common sense is your friend here.
+This will obviously create useful results only for fairly small and homogenous administrative entities, and fairly large datasets. Common sense is your friend here.
 
 Example
 -------
