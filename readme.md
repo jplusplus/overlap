@@ -27,12 +27,12 @@ Now we want to know the approximate number of camels in each *county*.
      `2  | Värmlands län   | Dalarna    | 6`  
      `3  | Dalarnas län    | Dalarna    | 180`  
 
-2. Then we run `weighted_data --id_1 county --id_2 province --area area` to produce a json file, `factors.json`, with weighing factors:
+2. Then we run `weighted_data --id_1=county --id_2=province --area=area` to produce a json file, `factors.json`, with weighing factors:
 
      `"Värmlands län": {"Värmland": 1, "Dalarna": .03},`  
      `"Dalarnas län": {"Dalarna": .97}`
 
-3. Finally, we run our camel data through this filter, `run_stats --id province --value num_camels --factors factors.json --input input.csv`, to get the approximate count of camels in each county:
+3. Finally, we run our camel data through this filter, `run_stats --id=province --value=num_camels --factors=factors.json --input=input.csv`, to get the approximate count of camels in each county:
 
     `Värmlands län, 13`  
     `Dalarnas län, 19`
