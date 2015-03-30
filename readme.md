@@ -22,18 +22,18 @@ Now we want to know the approximate number of camels in each county.
 
 1. Using QGIS, we produce a .dbf file with all intersections:
 
-     ID  county           province    area
-     1   Värmlands län    Värmland    190
-     2   Värmlands län    Dalarna     6
-     3   Dalarnas län     Dalarna     180
+     `ID  county           province    area`
+     `1   Värmlands län    Värmland    190`
+     `2   Värmlands län    Dalarna     6`
+     `3   Dalarnas län     Dalarna     180`
 
 2. Then we run `weighted_data --id_1 county --id_2 province --area area` to produce a json file, `factors.json`, with weighing factors:
 
-     "Värmlands län": {"Värmland": 1, "Dalarna": .03},
-     "Dalarnas län": {"Dalarna": .97}
+     `"Värmlands län": {"Värmland": 1, "Dalarna": .03},`
+     `"Dalarnas län": {"Dalarna": .97}`
 
 3. Finally, we run our camel data through this filter, `run_stats --id province --value num_camels --factors factors.json --input input.csv`  greger
 
-    Värmlands län, 13
-    Dalarnas län, 19
+    `Värmlands län, 13`
+    `Dalarnas län, 19`
 
