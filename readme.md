@@ -1,6 +1,6 @@
 The problem
 -----------
-You have two different, overlapping administrative divisions, and want statistics based on one of the extrapolated to the other.
+You have two different, overlapping administrative divisions, and want statistics based on one of them extrapolated to the other.
 
 Case: We have hardly any demographic data for the 15,000 or so Swedish postal codes. On the other hand we have plenty of interesting data on the ≈ 6,000 electorial districts. Given a fairly large dataset where we know the postal codes, we can extrapolate statistics from electorial districts, and get a fair approximation.
 
